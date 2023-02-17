@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+
+    <style>
+        body {
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .img_header img {
+            width: 150px;
+            height: 90px;
+        }
+
+        p.title {
+            font-size: 25px;
+        }
+
+        div.content1b {
+            display: flex;
+        }
+
+        div.content1c {
+            display: flex;
+        }
+
+        div.content1d {
+            display: flex;
+        }
+
+        div.content2 {
+            margin-left: 5%;
+            text-align: center;
+        }
+
+        div.sign_in {
+            background-color: lightblue;
+            border: solid 1px;
+            width: 280px;
+            height: 220px;
+            margin-bottom: 10%;
+        }
+
+        div.sign_in td.ex {
+            font-size: 15px;
+            color: gray;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            border: solid 1px;
+            border-radius: 4px;
+            height: 25px;
+        }
+
+        div.container {
+            display: flex;
+        }
+        
+        div.create {
+            background-color: lightblue;
+            border: solid 1px;
+            width: 280px;
+            height: 120px;
+        }
+
+        div.create button {
+            width: 200px;
+            height: 35px;
+            font-size: 17px;
+        }
+
+        footer {
+            margin-top: 10%;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img_header">
+        <img src="img/gmail.jpg" alt="">
+    </div>
+    <div class="container">
+        <div class="content1">
+            <div class="content1a">
+                <p class="title">
+                    <b>A Google aproach to Gmail</b>
+                </p>
+                <p>Gmail is built on the idea that email can be more intuitive, efficient, and useful.
+                    And maybe even fun. After all, Gmail has:</p>
+            </div>
+            <div class="content1b">
+                <p>
+                    <img src="img/data of gmail.png" alt="">
+                </p>
+                <p>
+                    <b>Lots of space</b>
+                    <br>
+                    Over 7523.392414 megabytes (and couting) of free storage.
+                </p>
+            </div>
+            <div class="content1c">
+                <p>
+                    <img src="img/spam.png" alt="">
+                </p>
+                <p>
+                    <b>Less spam</b>
+                    <br>
+                    Keep unwanted messages out of your inbox.
+                </p>
+            </div>
+            <div class="content1d">
+                <p>
+                    <img src="img/mobile.png" alt="">
+                </p>
+                <p>
+                    <b>Mobile access</b>
+                    <br>
+                    Get Gmail on your mobile phone. <a href="#">Learn more</a> 
+                </p>
+            </div>
+        </div>
+
+        <div class="content2">
+            <div class="sign_in">
+                <table>
+                    <tr>
+                        <td colspan="2">Sign in with your</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <b>Google Account</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Username:</td>
+                        <td>
+                            <input type="text" name="txtUserName" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="ex">
+                            ex: pat@example.com
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td>
+                            <input type="text" name="txtPassword" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="txtCheckBox" id="">
+                            Stay signed in
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">Sign in</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a href="#">Can't access your account?</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="create">
+                <table>
+                    <tr>
+                        <td colspan="2">New to Google Mail? It's free and easy.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">
+                                <b>Create an account>></b>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">About Google Mail</a></td>
+                        <td><a href="#">New features!</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;</p>
+        <p id="current_year"></p>
+        <p><a href="#"> - Google Mail for Organizations - </a></p>
+        <p><a href="#"> Terms - </a></p>
+        <p><a href="#"> Help</a></p>
+    </footer>
+
+    <script>
+        date = new Date();
+        year = date.getFullYear();
+        document.getElementById("current_year").innerHTML = year;
+    </script>
+</body>
+</html>
