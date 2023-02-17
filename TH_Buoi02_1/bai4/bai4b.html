@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai4b</title>
+    <style>
+        div.container {
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            text-align: center;
+            border: 1px;
+            background-color: lightblue;
+            width: 300px;
+        }
+
+        input.Default_Value {
+            width: 298px;
+            height: 27px;
+            border-top-color: gray;
+            border-top-width: 1px;
+        }
+
+        input {
+            width: 40px;
+            height: 25px;
+        }
+
+        input.number0 {
+            width: 120px;
+        }
+
+        input.equal {
+            width: 40px;
+            height: 83px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td colspan="5">
+                    <input class="Default_Value" type="text" name="txtDefaultValue" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="MC">
+                </td>
+                <td>
+                    <input type="button" value="MR">
+                </td>
+                <td>
+                    <input type="button" value="MS">
+                </td>
+                <td>
+                    <input type="button" value="M+">
+                </td>
+                <td>
+                    <input type="button" value="M-">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="<-">
+                </td>
+                <td>
+                    <input type="button" value="CE">
+                </td>
+                <td>
+                    <input type="button" value="C">
+                </td>
+                <td>
+                    <input type="button" value="Sqrt">
+                </td>
+                <td>
+                    <input type="button" value="%">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="7">
+                </td>
+                <td>
+                    <input type="button" value="8">
+                </td>
+                <td>
+                    <input type="button" value="9">
+                </td>
+                <td>
+                    <input type="button" value="/">
+                </td>
+                <td>
+                    <input type="button" value="1/x">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4">
+                </td>
+                <td>
+                    <input type="button" value="5">
+                </td>
+                <td>
+                    <input type="button" value="6">
+                </td>
+                <td>
+                    <input type="button" value="*">
+                </td>
+                <td rowspan="3">
+                    <input class="equal" type="button" value="=">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1">
+                </td>
+                <td>
+                    <input type="button" value="2">
+                </td>
+                <td>
+                    <input type="button" value="3">
+                </td>
+                <td>
+                    <input type="button" value="-">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input class="number0" type="button" value="0">
+                </td>
+                <td>
+                    <input type="button" value=".">
+                </td>
+                <td>
+                    <input type="button" value="+">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5"><br></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
