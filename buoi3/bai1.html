@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai1</title>
+    <style>
+        div.container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        div.title {
+            text-align: center;
+        }
+
+        div.input {
+            margin-bottom: 10%;
+            border: solid 1px red;
+        }
+
+        table.tb_input {
+            background-color: lightgray;
+            border-style: solid;
+            text-align: center;
+            border-collapse: collapse;
+            width: 270px;
+            height: 120px;
+        }
+
+        input {
+            border: solid 1px;
+            height: 20px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <p>
+            <h1>TÌM HIỂU KỸ THUẬT DOM TRONG JAVASCRIPT</h1>
+            <h1>(DOM : Document Object Model)</h1>
+            </p>
+        </div>
+        <div class="input">
+            <table class="tb_input" border="1">
+                <tr>
+                    <td>Số dòng</td>
+                    <td>
+                        <input type="number" name="txtRow" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Số cột</td>
+                    <td>
+                        <input type="number" name="txtColumn" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" onclick="Show()">Hiển thị</button>
+                        <button type="reset">Xóa</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="result">
+
+        </div>
+    </div>
+    <script language="JavaScript">
+        function Show() {
+            var row = document.getElementsByName("txtRow");
+            var column = document.getElementsByName("txtColumn");
+
+            var tb = document.createElement("table");
+            tb.style.backgroundColor = 'lightblue';
+            tb.style.border = "1px";
+            tb.style.borderColor = "black";
+            tb.style.borderStyle = "solid";
+            tb.style.width = "350px";
+            tb.style.height = "150px";
+
+            for (let i = 0; i < row; i++) {
+                var tr = document.createElement("tr");
+
+                for (let j = 0; j < column; j++) {
+                    var td = document.createElement("td");
+                    var node = document.createTextNode(i + " " + j);
+                    td.appendChild(node);
+                    tr.appendChild(td);
+                }
+                console.log(tr);
+                tb.appendChild(tr);
+            }
+
+            var div = document.getElementsByClassName("result")[0];
+            div.appendChild(tb);
+        }
+    </script>
+</body>
+
+</html>
